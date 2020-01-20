@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://monitoring.ap-southeast-2.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: Action=PutMetricData&MetricData.member.1.MetricName=Test%20Metric&MetricData.member.1.Unit=Count&MetricData.member.1.Value=1.0&Namespace=Test%20Namespace&Version=2010-08-01
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=utf-8
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.89.1 ruby/2.5.5 x86_64-linux aws-sdk-cloudwatch/1.31.0
+      Host:
+      - monitoring.ap-southeast-2.amazonaws.com
+      X-Amz-Date:
+      - 20200120T015145Z
+      X-Amz-Content-Sha256:
+      - ce84fce47308578e17cb7496520eb1e97ef25410ca6673a790cb75ed148cf821
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20200120/ap-southeast-2/monitoring/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=45b8049c8478306dfacd4097a3c29e824bf6195a7efaaa911d0ae3177034c02b
+      Content-Length:
+      - '172'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amzn-Requestid:
+      - 4e90cfb9-8bb5-4652-9773-f0d3409c8038
+      Content-Type:
+      - text/xml
+      Content-Length:
+      - '212'
+      Date:
+      - Mon, 20 Jan 2020 01:51:47 GMT
+    body:
+      encoding: UTF-8
+      string: |
+        <PutMetricDataResponse xmlns="http://monitoring.amazonaws.com/doc/2010-08-01/">
+          <ResponseMetadata>
+            <RequestId>4e90cfb9-8bb5-4652-9773-f0d3409c8038</RequestId>
+          </ResponseMetadata>
+        </PutMetricDataResponse>
+    http_version: 
+  recorded_at: Mon, 20 Jan 2020 01:51:48 GMT
+- request:
+    method: post
+    uri: https://monitoring.ap-southeast-2.amazonaws.com/
+    body:
+      encoding: UTF-8
+      string: Action=PutMetricData&MetricData.member.1.MetricName=Test%20Metric&MetricData.member.1.Unit=Count&MetricData.member.1.Value=1.0&Namespace=Default%20Namespace&Version=2010-08-01
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded; charset=utf-8
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.89.1 ruby/2.5.5 x86_64-linux aws-sdk-cloudwatch/1.31.0
+      Host:
+      - monitoring.ap-southeast-2.amazonaws.com
+      X-Amz-Date:
+      - 20200120T015843Z
+      X-Amz-Content-Sha256:
+      - 7638539bb6afc4659f01e4fe3aca58b7c45e847f100ee930a1342375d411fcf5
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20200120/ap-southeast-2/monitoring/aws4_request,
+        SignedHeaders=content-type;host;x-amz-content-sha256;x-amz-date, Signature=a867d5608ba44c4d30712042cb8824ceb35c06e106f9606afd1f822c2c68daf7
+      Content-Length:
+      - '175'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amzn-Requestid:
+      - a7fcf898-da65-4d64-813f-04aeb459aff0
+      Content-Type:
+      - text/xml
+      Content-Length:
+      - '212'
+      Date:
+      - Mon, 20 Jan 2020 01:58:45 GMT
+    body:
+      encoding: UTF-8
+      string: |
+        <PutMetricDataResponse xmlns="http://monitoring.amazonaws.com/doc/2010-08-01/">
+          <ResponseMetadata>
+            <RequestId>a7fcf898-da65-4d64-813f-04aeb459aff0</RequestId>
+          </ResponseMetadata>
+        </PutMetricDataResponse>
+    http_version: 
+  recorded_at: Mon, 20 Jan 2020 01:58:45 GMT
+recorded_with: VCR 5.0.0
